@@ -1,0 +1,52 @@
+@import '../styles/global.less';
+
+.home{
+  width: 100%;
+  background:transparent !important;
+  .top{
+    
+
+    height: 100vh;
+    background:transparent;
+    padding: 0;
+    
+    .top-title,.top-des,.top-link{
+      animation: zoomIn 2s;
+    }
+    .top-title{
+      font-size: 50px;
+      color: @base-color;
+      margin: 40vh 0 0 0;
+    }
+    .top-des{
+      font-size: 18px;
+      color: @base-color;
+    }
+    .top-btn{
+      height: calc(60% - 200px);
+      font-size: 50px;
+      animation: fadeInUp 2s;
+    }
+    a{
+      display: block;
+      color:#fff;
+      width: 60px;
+      border-radius: 50%;
+    }
+    a:hover{
+      background-color: #1890FF;
+      transition: all 1s ease-out;
+    }
+  }  
+
+  .middle{
+    height: 70vh;
+    background:@base-color;
+  }
+
+  .footer{
+    height: 30vh;
+    background:#232328;
+    padding: 0;
+  }
+}
