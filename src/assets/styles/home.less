@@ -3,45 +3,86 @@
 .home{
   width: 100%;
   background:transparent !important;
+  
   .top{
-    
-
     height: 100vh;
     background:transparent;
     padding: 0;
     
-    .top-title,.top-des,.top-link{
+    .top-header{
+      margin:40vh 0 0 0;
       animation: zoomIn 2s;
-    }
-    .top-title{
-      font-size: 50px;
       color: @base-color;
-      margin: 40vh 0 0 0;
+      
+      .top-header-title{
+        font-size:50px;
+      }
+      .top-header-des{
+        font-size: 18px;
+        letter-spacing: 10px;
+      }
     }
-    .top-des{
-      font-size: 18px;
-      color: @base-color;
-    }
-    .top-btn{
+    
+    .top-foot{
       height: calc(60% - 200px);
       font-size: 50px;
       animation: fadeInUp 2s;
-    }
-    a{
-      display: block;
-      color:#fff;
-      width: 60px;
-      border-radius: 50%;
-    }
-    a:hover{
-      background-color: #1890FF;
-      transition: all 1s ease-out;
+
+      .top-foot-box{
+        width: 60;
+        height: 60;
+        border-radius: 50%;
+        text-align: center;
+        line-height:60px;
+        a{
+          display: block;
+          color:@base-color;
+          width: 60px;
+          border-radius: 50%;
+        }
+        a:hover{
+          background-color: #1890FF;
+          transition: all .6s ease-out;
+        }
+      }
     }
   }  
 
   .middle{
     height: 70vh;
-    background:@base-color;
+    padding: 3vh 20vw;
+    background-color: @base-color;
+
+    .middle-all{
+      background-color: #faf9f9;
+      height: 100%;
+    }
+
+    .middle-header{
+      height: 20%;
+
+      h1{
+        margin: 0;
+        padding: 0 0 10px 0;
+      }
+      p{
+        margin: 10px 0 0 0;
+      }
+      h1:after {
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        content: "";
+        left: 50%;
+        margin-left: -25px;
+        bottom:54px;
+        background: #00C2FF;
+      }
+    }
+
+    .middle-foot{
+      height: 80%;
+    }
   }
 
   .footer{

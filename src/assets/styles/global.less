@@ -11,3 +11,21 @@
   0%{opacity:0;-webkit-transform:translate3d(0,60px,0);transform:translate3d(0,60px,0)}
   to{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 }
+@keyframes menusOpen{
+  0%{opacity:0;-webkit-transform:translate3d(0,-400px,0);transform:translate3d(0,-400px,0)}
+  to{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+}
+@keyframes menusClose{
+  0%{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+  to{opacity:0;-webkit-transform:translate3d(0,-400px,0);transform:translate3d(0,-400px,0)}
+}
+
+
+// 控制文字超出部分用 ... 表示
+.max-line(@num){
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:@num; 
+}
