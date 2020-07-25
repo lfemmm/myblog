@@ -18,6 +18,7 @@ const items = [
 
 
 export default class Home extends Component {
+
   render() {
     return (
       <Layout className="home">
@@ -27,8 +28,8 @@ export default class Home extends Component {
             <Col className='top-header-title' span={24} align='middle' justify='center'>LF-Blog</Col>
             <Col className='top-header-des' span={24} align='middle' justify='center'>只要朝着一个方向努力，一切都会变得得心应手</Col>
             <Col span={24} align='middle' justify='center'>
-              <Button type='primary' style={{ marginRight: 20 }}>个人简历</Button>
-              <Button type='primary'>个人博客</Button>
+              <Button type='primary' style={{ marginRight: 20 }} onClick={()=> this.props.router.push('/other/resume')}>个人简历</Button>
+              <Button type='primary' onClick={()=> this.props.router.push('/other/blog')}>个人博客</Button>
             </Col>
           </Row>
           <Row className='top-foot' align='bottom' justify='center'>

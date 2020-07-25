@@ -1,27 +1,81 @@
 @import './global.less';
 
-.foot-header{
-  height: 80%;
-  color: @base-color;
-  padding: 30px 100px;
+.ai(){
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-color: #FFFFFF33;
+  border-radius: 50%;
+}
 
-  h2{
+.home-foot{
+  width: 100%;
+  height: 30vh;
+  background:#232328;
+  padding: 0;
+
+  .foot-header{
+    height: 80%;
     color: @base-color;
-    margin-bottom: 20px;
+    padding: 30px 100px;
+  
+    h2{
+      color: @base-color;
+      margin-bottom: 20px;
+    }
+  
+    p{
+      margin-bottom: 20px;
+    }
+  
+    i{
+      margin-right: 10px;
+    }
   }
-
-  p{
-    margin-bottom: 20px;
-  }
-
-  i{
-    margin-right: 10px;
+  
+  
+  .foot-foot{
+    background-color: #1d1d21;
+    color: @base-color;
+    height: 20%;
   }
 }
 
 
-.foot-foot{
-  background-color: #1d1d21;
-  color: @base-color;
-  height: 20%;
+.other-foot{
+  width: 100%;
+  height: 120px;
+  background:#232328;
+
+  .foot-header{
+    height: 60px;
+    color: @base-color;
+    padding: 10px;
+
+    a{
+      .ai();
+      margin-right: 30px;
+      text-align: center;
+
+      i{
+        .ai();
+        color: @base-color;
+        font-size: 30px;
+      }
+
+      &:hover{
+        i {
+          background-color: green;
+        }
+      }
+    }
+  }
+
+  .foot-foot{
+    background-color: #1d1d21;
+    color: @base-color;
+    height: 50%;
+  }
 }
+

@@ -6,6 +6,90 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "7171160",
+      "name": "项目管理",
+      "font_class": "xiangmu",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "13638695",
+      "name": "工作",
+      "font_class": "gongzuo",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "13769961",
+      "name": "个人",
+      "font_class": "geren",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "4670121",
+      "name": "教育",
+      "font_class": "jiaoyu",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "82381",
+      "name": "游戏",
+      "font_class": "94",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "5171980",
+      "name": "乒乓球",
+      "font_class": "pingpangqiu",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "12293696",
+      "name": "跑步",
+      "font_class": "paobu",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "12336006",
+      "name": "篮球",
+      "font_class": "lanqiu",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "6240886",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    },
+    {
+      "icon_id": "11536341",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e797",
+      "unicode_decimal": 59287
+    },
+    {
+      "icon_id": "6337586",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "10049598",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
       "icon_id": "3877902",
       "name": "火箭",
       "font_class": "huojian",

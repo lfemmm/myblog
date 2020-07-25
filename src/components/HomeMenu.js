@@ -32,7 +32,7 @@ export default class HomeMenu extends Component {
     return (
       <div className='home-menu' >
         <div className='icon'>
-          <img onClick={this.handleMenu} src={this.state.src} alt='menu' width='100%' />
+          <a href="###"><img onClick={this.handleMenu} src={this.state.src} alt='menu' width='100%' /></a>
         </div>
         <div className={this.state.menuclass}>
           <ul>
@@ -43,7 +43,7 @@ export default class HomeMenu extends Component {
               <a href='###'><i className='iconfont icon-bokexinwen' />博文</a>
             </li>
             <li>
-              <a href='###'><i className='iconfont icon-miao' />日志</a>
+              <a href='###'><i className='iconfont icon-miao' />日记</a>
             </li>
             <li>
               <a href='###'><i className='iconfont icon-liuyan' />留言板</a>
