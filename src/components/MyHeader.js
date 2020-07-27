@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Row, Col, Menu } from 'antd'
-import Logo from '../assets/imgs/logo.png'
+import Logo from '../assets/imgs/admin_logo1.png'
 import TouXiang from '../assets/imgs/touxiang.jpg'
 import '../assets/styles/myHeader.less'
 
@@ -51,7 +51,9 @@ export default class MyHeader extends Component {
           </Menu>
         </Col>
         <Col span={2} className='my-header-touxiang'>
-          <img src={TouXiang} alt="" height={40} width={40} />
+          <a href="#/login">
+            <img src={TouXiang} alt="" height={40} width={40}/>
+          </a>
         </Col>
       </Row>
     )

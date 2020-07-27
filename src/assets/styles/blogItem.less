@@ -1,0 +1,44 @@
+@import './global.less';
+
+.blog-item{
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: @base-color;
+  position: relative;
+  box-shadow: 2px 2px 2px #7c484833;
+
+  .blog-title{ 
+    width: 100%; 
+    height: 40; 
+    margin-bottom: 30px; 
+    border-bottom: 1px solid blue; 
+
+    .blog-original{
+      color: #2ea7e0;
+      font-weight:700;
+    }
+  }
+
+  .blog-content{
+    border-bottom: 1px solid red; 
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    p{
+      text-indent: 2em;
+      .max-line(7)
+    }
+  }
+
+  .blog-footer{
+    width: 100%;
+    margin-bottom: 0;
+    height: 30;
+    line-height: 30px;
+
+    i{
+      margin: 0 10px;
+    }
+  }
+}
+

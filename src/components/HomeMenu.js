@@ -37,17 +37,20 @@ export default class HomeMenu extends Component {
         <div className={this.state.menuclass}>
           <ul>
             <li>
-              <a href='###'><i className='iconfont icon-toujianli' />简历</a>
+              <a href='#/other/resume'><i className='iconfont icon-toujianli' />简历</a>
             </li>
             <li>
-              <a href='###'><i className='iconfont icon-bokexinwen' />博文</a>
+              <a href='#/other/blog'><i className='iconfont icon-bokexinwen' />博文</a>
             </li>
             <li>
-              <a href='###'><i className='iconfont icon-miao' />日记</a>
+              <a href='#/other/diary'><i className='iconfont icon-miao' />日记</a>
             </li>
             <li>
-              <a href='###'><i className='iconfont icon-liuyan' />留言板</a>
+              <a href='#/other/messageboard'><i className='iconfont icon-liuyan' />留言板</a>
             </li>
+            {/* <li>
+              <a href='#/login'><i className='iconfont icon-geren' />登录</a>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "809956",
+      "name": "查看",
+      "font_class": "chakan",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "902029",
+      "name": "标签",
+      "font_class": "biaoqian",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "1272148",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
       "icon_id": "7171160",
       "name": "项目管理",
       "font_class": "xiangmu",

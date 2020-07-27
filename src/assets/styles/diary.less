@@ -1,0 +1,53 @@
+@import './global.less';
+
+.diary{
+  width: 100%;
+  height: 100%;
+
+  .diary-detail{
+    padding: 20px;
+    background-color: @base-color;
+
+    .start,.end{
+      padding: 0;
+      height: 80px;
+      .ant-timeline-item-head-custom{
+        top:15px
+      }
+      .ant-timeline-item-content{
+        background-color: @base-color !important;
+      }
+      h2{color: #009688;}
+      
+    }
+
+    .ant-timeline{
+      width: 100%;
+      .ant-timeline-item{
+        .ant-timeline-item-label{
+          width: 240px;
+          font-size: 16px;
+          font-weight: 700;
+        }
+        .ant-timeline-item-head,.ant-timeline-item-tail{
+          left: 260px ;
+        }
+        .ant-timeline-item-tail{
+          border-left: 2px solid #009688
+        }
+        .ant-timeline-item-content{
+          margin: 0;
+          left: 280px ;
+          width:calc(~'100% - 280px') ;
+          padding: 5px;
+          background-color: #009688;
+          color: @base-color;
+
+          .diary-content{
+            padding: 0 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+}

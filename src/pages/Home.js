@@ -64,7 +64,7 @@ export default class Home extends Component {
           </Row>
         </Content>
         <Footer className='footer'>
-          <HomeFoot />
+          <HomeFoot router={this.props.router}/>
         </Footer>
         <BackToTop />
       </Layout >

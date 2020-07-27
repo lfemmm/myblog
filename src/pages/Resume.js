@@ -3,7 +3,6 @@ import { Row, Col, Progress } from 'antd'
 import '../assets/styles/resume.less'
 import LF from '../assets/imgs/lifeng.jpg'
 import '../assets/font/iconfont.css'
-import BackToTop from '../components/BackToTop'
 
 
 export default class Resume extends Component {
@@ -15,9 +14,9 @@ export default class Resume extends Component {
   render() {
     return (
       <Row className="resume" justify='center' align='middle'>
-        <Col className='resume-outer'>
+        <Col xxl={18} xl={20} lg={24} md={24} className='resume-outer'>
           <Row className='resume-inner'>
-            <Col className='inner-left'>
+            <Col xxl={5} xl={6} lg={6} md={7} className='inner-left'>
               <Row className='touxiang' justify='center' align='middle'>
                 <img src={LF} alt="" width="150px" />
               </Row>
@@ -79,7 +78,7 @@ export default class Resume extends Component {
                 </Col> */}
               </Row>
             </Col>
-            <Col className='inner-right'>
+            <Col xxl={19} xl={18} lg={18} md={17} className='inner-right'>
               <Row className='title'>
                 <Col span={24}>
                   <p className='f-title'>黎峰</p>
@@ -126,7 +125,7 @@ export default class Resume extends Component {
                   </ul>
                 </Col>
                 <Col span={24} style={{marginTop:"10px"}}>
-                  <h2>安检院安全检查管理系统 | 2019.10 - 2020.05 | 项目组长</h2>
+                  <h2>安检院安全检查系统 | 2019.10 - 2020.05 | 项目组长</h2>
                   <ul>
                     <li style={{fontSize:"16px"}}><strong>技术栈</strong>：Vue、Element-ui、ECharts、JavaScript、Webpack、npm。</li>
                     <li style={{fontSize:"16px"}}><strong>项目描述</strong>：系统主要作用是对安检院的原材料和产品等方面的安全检验检测报告进行记录、统计、分析，以及数据挖掘和预警，达到对原材料以及产品的质量的监管。</li>
@@ -134,7 +133,7 @@ export default class Resume extends Component {
                   </ul>
                 </Col>
                 <Col span={24} style={{marginTop:"10px"}}>
-                  <h2>事故事件分析小程序 | 2019.06 - 2019.07 | 后端开发组长</h2>
+                  <h2>事故事件分析小程序 | 2019.06 - 2019.07 | 后端组长</h2>
                   <ul>
                     <li style={{fontSize:"16px"}}><strong>技术栈</strong>：Python、Django、Redis、MySQL。</li>
                     <li style={{fontSize:"16px"}}><strong>项目描述</strong>：该项目是一个针对管理层使用的微信小程序，可以及时的查看公司最新的事故事件，以便及时应对。</li>
@@ -142,7 +141,7 @@ export default class Resume extends Component {
                   </ul>
                 </Col>
                 <Col span={24} style={{marginTop:"10px"}}>
-                  <h2>中油测井安全管理系统 | 2018.11 - 2019.05 | web前端组员</h2>
+                  <h2>中油测井安全管理系统 | 2018.11 - 2019.05 | 前端组员</h2>
                   <ul>
                     <li style={{fontSize:"16px"}}><strong>技术栈</strong>：Vue、Element-ui、ECharts、JavaScript、Webpack、npm。</li>
                     <li style={{fontSize:"16px"}}><strong>项目描述</strong>：系统主要作用是针对中油测井公司的施工、管理等方面的安全事进行记录、统计与分析，以及数据挖掘和预警，达到逐年、逐月的减少安全事故的目的。</li>
@@ -189,7 +188,6 @@ export default class Resume extends Component {
             </Col>
           </Row>
         </Col>
-        <BackToTop />
       </Row>
     )
   }

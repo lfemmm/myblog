@@ -1,5 +1,11 @@
 @import '../styles/global.less';
 
+body{
+  background: url('../imgs/home_bg.jpg') no-repeat fixed center;
+  background-size: 100% 100%;
+}
+
+
 .home{
   width: 100%;
   background:transparent !important;
@@ -49,7 +55,7 @@
   }  
 
   .middle{
-    height: 70vh;
+    height: calc(100vh - 120px);
     padding: 3vh 20vw;
     background-color: @base-color;
 
