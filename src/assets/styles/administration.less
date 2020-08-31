@@ -18,9 +18,11 @@
 
     .header{
       position: fixed;
-      width: 100%;
+      width: calc(~'100% - 200px');
       box-shadow: 1px 1px 1px #7c484833;
       z-index: 1;
+      text-align: right;
+      padding-right: 100px;
     }
 
     .content{
@@ -43,3 +45,6 @@
   }
 }
 
+.ant-dropdown-placement-bottomLeft{
+  top: 60px !important;
+}

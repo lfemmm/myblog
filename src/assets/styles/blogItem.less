@@ -13,6 +13,11 @@
     margin-bottom: 30px; 
     border-bottom: 1px solid blue; 
 
+    .blog-importance{
+      background-color: #ff5722;
+      color: @base-color;
+      font-weight:700;
+    }
     .blog-original{
       color: #2ea7e0;
       font-weight:700;
@@ -24,9 +29,10 @@
     width: 100%;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    p{
+    span{
       text-indent: 2em;
-      .max-line(7)
+      line-height: 1.666em;
+      .max-line(5)
     }
   }
 
@@ -36,8 +42,8 @@
     height: 30;
     line-height: 30px;
 
-    i{
-      margin: 0 10px;
+    span{
+      margin: 0 10px 0 0;
     }
   }
 }

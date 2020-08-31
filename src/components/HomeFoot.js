@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../assets/styles/homeFoot.less'
 import { Row, Button, Tooltip } from 'antd'
 import '../assets/font/iconfont.css'
+import {getUserInfo} from '../services/userinfo.js'
 
 
 // const HomePageFoot =
@@ -66,6 +67,24 @@ import '../assets/font/iconfont.css'
 //   </div>
 
 export default class HomeFoot extends Component {
+  state={
+    userInfo:{}
+  }
+
+  getUser=()=>{
+    getUserInfo().then(res =>{
+      this.setState({
+        userInfo:res.data
+      })
+    }).catch(err=>{
+      console.log(err);
+    })
+  }
+
+  componentDidMount() {
+    this.getUser()
+  }
+  
 
 
   render() {
@@ -73,22 +92,22 @@ export default class HomeFoot extends Component {
     return (
       <div className='other-foot'>
         <Row className='foot-header' justify='center' align='middle'>
-          <Tooltip title='终是双曲线'>
+          <Tooltip title={this.state.userInfo.nickname}>
             <Button style={{ position: 'absolute', left: '100px' }} type='primary' size='large' onClick={() => this.props.router.push('/other/resume')}>About Me</Button>
           </Tooltip>
-          <Tooltip title='783898950'>
+          <Tooltip title={this.state.userInfo.qq}>
             <a href='###'><i className='iconfont icon-qq' /></a>
           </Tooltip>
-          <Tooltip title='783898950@qq.com'>
+          <Tooltip title={this.state.userInfo.mail}>
             <a href='###'><i className='iconfont icon-youxiang' /></a>
           </Tooltip>
-          <Tooltip title='https://github.lfemmm.com'>
+          <Tooltip title={this.state.userInfo.github}>
             <a href='###'><i className='iconfont icon-github' /></a>
           </Tooltip>
-          <Tooltip title='。。。'>
-            <a href='###'><i className='iconfont icon-liuyan' /></a>
+          <Tooltip title='留言板'>
+            <a href='#/other/messageboard'><i className='iconfont icon-liuyan' /></a>
           </Tooltip>
-          <Tooltip title='西南石油大学'>
+          <Tooltip title={this.state.userInfo.address}>
             <a href='###'><i className='iconfont icon-dizhi' /></a>
           </Tooltip>
         </Row>
